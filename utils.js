@@ -1,6 +1,8 @@
 import mixin from './mixin'
 
+
 export default {
+  
   set: function (key, value, obj) {
     const clone = this.assign({}, obj)
     clone[key] = value
