@@ -1,12 +1,12 @@
 import mixin from './mixin'
 
-const util = {
+export default {
   set: function (key, value, obj) {
     const clone = this.assign({}, obj)
     clone[key] = value
     return clone
   },
-  
+
   /**
    * Polyfill for Object.assign for IE11 support
    */
@@ -20,5 +20,3 @@ const util = {
     return to
   }
 }
-
-export default util
